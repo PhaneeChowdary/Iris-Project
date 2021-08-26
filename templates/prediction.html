@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>Iris-Project</title>
+
+    <style>
+        body {
+            background-image: url("static/images/AI.jpg");
+            max-width: 100%;
+            height: auto;
+            color: rgb(10, 173, 37);
+            text-align: center;
+        }
+        img{
+            height:250px;
+            width:30%
+        }
+    </style>
+</head>
+
+<body>
+    
+    <h1>{{ result }} with accuracy {{ accuracy }}</h1>
+
+    {% if result == "Iris-setosa" %}
+    <img src = "static/images/Iris-setosa.png" alt = "Setosa">
+    {% elif result == "Iris-versicolor" %}
+    <img src="static/images/Iris-versicolor.jpg" alt="Versicolor">
+    {% else %}
+    <img src="static/images/Iris-virginica.jpg" alt="Virginica">
+    {% endif %}
+
+</body>
+
+</html>

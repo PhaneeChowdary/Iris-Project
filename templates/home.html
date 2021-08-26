@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset = "UTF-8">
+    <title>Iris-Project</title>
+
+    <style>
+        body {
+            background-image : url("static/images/AI.jpg");
+            max-width : 100%;
+            height : auto;
+            color : rgb(10, 173, 37);
+            text-align: center;
+        }
+        form {
+            margin : 2%;
+            font-weight: bold;
+        }
+
+        input{
+            border-radius: 10px;
+            text-align: center;
+        }
+
+        img{
+            width : 45%;
+            height : auto;
+        }
+    </style>
+</head>
+
+<body>
+    <h1 style = "color:turquoise">Machine Learning Project</h1>
+    <form action='/submit' method='POST'>
+        <label for='seplen'> SepalLength(cm) </label><br><br>
+        <input type='text' id='SepalLength' name='SepalLength' value='0'><br><br>
+
+        <label for='sepwid'> SepalWidth(cm) </label><br><br>
+        <input type='text' id='SepalWidth' name='SepalWidth' value='0'><br><br>
+
+        <label for='petlen'> PetalLength(cm) </label><br><br>
+        <input type='text' id='PetalLength' name='PetalLength' value='0'><br><br>
+
+        <label for='petwid'> PetalWidth(cm) </label><br><br>
+        <input type='text' id='PetalWidth' name='PetalWidth' value='0'><br><br>
+
+        <input type='submit' value='Predict'>
+    </form>
+</body>
+
+</html>
